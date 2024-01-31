@@ -9,11 +9,11 @@ import org.testng.annotations.Test;
 import automation.common.CommonBase;
 import automation.constant.CT_Common;
 
-public class Day7_Practice extends CommonBase{
+public class day8_Homework extends CommonBase{
 	@BeforeMethod
 	public void openChrome() throws InterruptedException
 	{
-		driver = initChromeDriver(CT_Common.URL_BepAnToan);
+		driver = initChromeDriver(CT_Common.URL_Automationfc);
 	}
 	@AfterMethod
 	public void closeChrome() 
@@ -22,13 +22,10 @@ public class Day7_Practice extends CommonBase{
 	}
 	
 	@Test
-	public void testBepAnToan() {
-		System.out.println("Test bếp an toàn");
-	}
-	@Test
 	public void praticeSeletor() {
-		WebElement bepTu = driver.findElement(By.linkText("Bếp Từ"));
-		WebElement mayHutMui = driver.findElement(By.linkText("Máy Hút Mùi"));
-	}
-	
+		WebElement name = driver.findElement(By.id("name"));
+		WebElement address = driver.findElement(By.id("address"));
+		WebElement email = driver.findElement(By.id("email"));
+		WebElement password = driver.findElement(By.id("password"));
+	}		
 }
