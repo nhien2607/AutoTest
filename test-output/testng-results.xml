@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-03T14:42:12 ICT" name="Default suite" finished-at="2024-03-03T14:42:26 ICT" duration-ms="14525">
+    <groups>
+    </groups>
+    <test started-at="2024-03-03T14:42:12 ICT" name="Default test" finished-at="2024-03-03T14:42:26 ICT" duration-ms="14525">
+      <class name="automation.testsuite.LoginTest">
+        <test-method is-config="true" signature="openChrome()[pri:0, instance:automation.testsuite.LoginTest@6e0f5f7f]" started-at="2024-03-03T14:42:12 ICT" name="openChrome" finished-at="2024-03-03T14:42:16 ICT" duration-ms="4507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openChrome -->
+        <test-method signature="loginFailIncorrectEmail()[pri:0, instance:automation.testsuite.LoginTest@6e0f5f7f]" started-at="2024-03-03T14:42:16 ICT" name="loginFailIncorrectEmail" finished-at="2024-03-03T14:42:17 ICT" duration-ms="1032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailIncorrectEmail -->
+        <test-method is-config="true" signature="closeChrome()[pri:0, instance:automation.testsuite.LoginTest@6e0f5f7f]" started-at="2024-03-03T14:42:17 ICT" name="closeChrome" finished-at="2024-03-03T14:42:18 ICT" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeChrome -->
+        <test-method is-config="true" signature="openChrome()[pri:0, instance:automation.testsuite.LoginTest@6e0f5f7f]" started-at="2024-03-03T14:42:18 ICT" name="openChrome" finished-at="2024-03-03T14:42:20 ICT" duration-ms="2822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openChrome -->
+        <test-method signature="loginFailIncorrectPass()[pri:0, instance:automation.testsuite.LoginTest@6e0f5f7f]" started-at="2024-03-03T14:42:20 ICT" name="loginFailIncorrectPass" finished-at="2024-03-03T14:42:21 ICT" duration-ms="917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailIncorrectPass -->
+        <test-method is-config="true" signature="closeChrome()[pri:0, instance:automation.testsuite.LoginTest@6e0f5f7f]" started-at="2024-03-03T14:42:21 ICT" name="closeChrome" finished-at="2024-03-03T14:42:21 ICT" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeChrome -->
+        <test-method is-config="true" signature="openChrome()[pri:0, instance:automation.testsuite.LoginTest@6e0f5f7f]" started-at="2024-03-03T14:42:21 ICT" name="openChrome" finished-at="2024-03-03T14:42:24 ICT" duration-ms="3069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openChrome -->
+        <test-method signature="loginSuccessfully()[pri:0, instance:automation.testsuite.LoginTest@6e0f5f7f]" started-at="2024-03-03T14:42:24 ICT" name="loginSuccessfully" finished-at="2024-03-03T14:42:26 ICT" duration-ms="1792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSuccessfully -->
+        <test-method is-config="true" signature="closeChrome()[pri:0, instance:automation.testsuite.LoginTest@6e0f5f7f]" started-at="2024-03-03T14:42:26 ICT" name="closeChrome" finished-at="2024-03-03T14:42:26 ICT" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeChrome -->
+      </class> <!-- automation.testsuite.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
