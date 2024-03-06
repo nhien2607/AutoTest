@@ -9,4 +9,5 @@ public class CT_Common {
 	public static String radioButton = "http://demo.seleniumeasy.com/basic-radiobutton-demo.html";
 	public static String dropdownListSeleniumEasy = "http://demo.seleniumeasy.com/basic-select-dropdown-demo.html";
 	public static String URL_Rise = "https://rise.fairsketch.com/signin";
+	public static String URL_Alada1 = "https://alada.vn/";
 }

@@ -33,7 +33,7 @@ public class LoginTest extends CommonBase {
 	public void loginFailIncorrectEmail()
 	{
 		LoginPage login = new LoginPage(driver);
-		login.LoginFunction("adminincorrect@demo.com", "riseDemo");
+		login.LoginFunction("adminIncorrect@demo.com", "riseDemo");
 		assertTrue(driver.findElement(By.xpath("//div[normalize-space()='Authentication failed!']")).isDisplayed());
 	}
 	@Test
