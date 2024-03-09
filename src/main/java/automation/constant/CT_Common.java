@@ -10,4 +10,5 @@ public class CT_Common {
 	public static String dropdownListSeleniumEasy = "http://demo.seleniumeasy.com/basic-select-dropdown-demo.html";
 	public static String URL_Rise = "https://rise.fairsketch.com/signin";
 	public static String URL_Alada1 = "https://alada.vn/";
+	public static String URL_TECH = "https://techydevs.com/demos/themes/html/trizen-demo/trizen/index.html";
 }

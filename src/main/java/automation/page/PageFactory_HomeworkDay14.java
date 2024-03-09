@@ -33,6 +33,9 @@ public class PageFactory_HomeworkDay14 {
 	
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement btnSubmit;
+	
+	@FindBy(xpath = "//div[@class='avatar2']")
+	WebElement btnImageAccount;
 
 	@FindBy(xpath = "//a[text()='Chỉnh sửa thông tin']")
 	WebElement btnEdit;
@@ -73,10 +76,11 @@ public class PageFactory_HomeworkDay14 {
 		txtPhone.sendKeys(phone);
 		btnSubmit.click();
 	}
-	public void EditPass (String newpass)
+	public void EditPass (String password, String newpass)
 	{
+		btnImageAccount.click();
 		btnEdit.click();
-		driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);
+		txtLoginPass.sendKeys(password);
 		txtNewPass.sendKeys(newpass);
 		txtReNewPass.sendKeys(newpass);
 		btnSaveNewPass.click();
