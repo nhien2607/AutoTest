@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-09T21:26:16 ICT" name="Default suite" finished-at="2024-03-09T21:26:20 ICT" duration-ms="3478">
+  <suite started-at="2024-03-13T11:00:13 ICT" name="Default suite" finished-at="2024-03-13T11:00:29 ICT" duration-ms="16028">
     <groups>
     </groups>
-    <test started-at="2024-03-09T21:26:16 ICT" name="Default test" finished-at="2024-03-09T21:26:20 ICT" duration-ms="3478">
-      <class name="automation.testsuite.HandleReadOnlyDatePicker">
-        <test-method is-config="true" signature="openChrome()[pri:0, instance:automation.testsuite.HandleReadOnlyDatePicker@3ee37e5a]" started-at="2024-03-09T21:26:16 ICT" name="openChrome" finished-at="2024-03-09T21:26:20 ICT" duration-ms="3280" status="PASS">
+    <test started-at="2024-03-13T11:00:13 ICT" name="Default test" finished-at="2024-03-13T11:00:29 ICT" duration-ms="16028">
+      <class name="automation.testsuite.Day16_Homework2">
+        <test-method is-config="true" signature="openChrome()[pri:0, instance:automation.testsuite.Day16_Homework2@3ee37e5a]" started-at="2024-03-13T11:00:13 ICT" name="openChrome" finished-at="2024-03-13T11:00:19 ICT" duration-ms="5650" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openChrome -->
-        <test-method signature="HandleDatePicker()[pri:0, instance:automation.testsuite.HandleReadOnlyDatePicker@3ee37e5a]" started-at="2024-03-09T21:26:20 ICT" name="HandleDatePicker" finished-at="2024-03-09T21:26:20 ICT" duration-ms="175" status="PASS">
+        <test-method signature="assertAlert()[pri:0, instance:automation.testsuite.Day16_Homework2@3ee37e5a]" started-at="2024-03-13T11:00:19 ICT" name="assertAlert" finished-at="2024-03-13T11:00:29 ICT" duration-ms="10358" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HandleDatePicker -->
-      </class> <!-- automation.testsuite.HandleReadOnlyDatePicker -->
+        </test-method> <!-- assertAlert -->
+      </class> <!-- automation.testsuite.Day16_Homework2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

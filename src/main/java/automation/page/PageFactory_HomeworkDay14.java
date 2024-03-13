@@ -1,11 +1,16 @@
 package automation.page;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PageFactory_HomeworkDay14 {
 	private WebDriver driver;
@@ -39,6 +44,9 @@ public class PageFactory_HomeworkDay14 {
 
 	@FindBy(xpath = "//a[text()='Chỉnh sửa thông tin']")
 	WebElement btnEdit;
+	
+	@FindBy(id = "txtpassword")
+	WebElement txtCurrentPass;
 	
 	@FindBy(id = "txtnewpass")
 	WebElement txtNewPass;
@@ -76,14 +84,26 @@ public class PageFactory_HomeworkDay14 {
 		txtPhone.sendKeys(phone);
 		btnSubmit.click();
 	}
-	public void EditPass (String password, String newpass)
+	public void EditPass (String password, String newpass) throws InterruptedException
 	{
 		btnImageAccount.click();
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Chỉnh sửa thông tin']")));
+		wait.until(ExpectedConditions.elementToBeClickable(btnEdit));
 		btnEdit.click();
-		txtLoginPass.sendKeys(password);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebElement webElement = driver.findElement(By.xpath("//label[text()='Giới tính']"));
+		js.executeScript("arguments[0].scrollIntoView(true);", webElement);
+		Thread.sleep(1000);
+
+		txtCurrentPass.sendKeys(password);
 		txtNewPass.sendKeys(newpass);
 		txtReNewPass.sendKeys(newpass);
 		btnSaveNewPass.click();
+		
+		wait.until(ExpectedConditions.alertIsPresent());
+		driver.switchTo().alert().accept();
 	}
 	public void LoginFunction(String username, String password)
 	{

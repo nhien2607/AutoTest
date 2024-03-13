@@ -28,7 +28,7 @@ public class Day14_Homework extends CommonBase {
 		Assert.assertTrue(driver.findElement(By.xpath("//a[@class='fleft martop20 khct']")).isDisplayed());
 	}
 	@Test
-	public void EditPassSuccessfully()
+	public void EditPassSuccessfully() throws InterruptedException
 	{
 		PageFactory_HomeworkDay14 login = new PageFactory_HomeworkDay14(driver);
 		login.LoginFunction("nhienledokhanh@gmail.com", "123456");
