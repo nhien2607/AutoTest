@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Run Parallel test with firefox(failed)">
+    <parameter name="browserParamName" value="firefox"/>
+    <classes>
+      <class name="automation.testsuite.AddClientTest">
+        <methods>
+          <include name="addClientSuccessfully"/>
+          <include name="openChrome"/>
+        </methods>
+      </class> <!-- automation.testsuite.AddClientTest -->
+    </classes>
+  </test> <!-- Run Parallel test with firefox(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

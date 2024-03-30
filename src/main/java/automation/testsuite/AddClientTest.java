@@ -3,6 +3,8 @@ package automation.testsuite;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import automation.common.CommonBase;
@@ -13,9 +15,13 @@ import automation.page.LoginPageFactory;
 public class AddClientTest extends CommonBase{
 	
 	@BeforeMethod
-	public void openChrome() throws InterruptedException {
-		driver = initChromeDriver(CT_Common.URL_Rise);
+	@Parameters("browserParamName")
+	public void openChrome(@Optional("chrome") String browserValue) throws InterruptedException
+	{
+		setupDriver(browserValue);
+		driver.get(CT_Common.URL_Rise);
 	}
+	
 	@Test
 	public void addClientSuccessfully() throws InterruptedException
 	{

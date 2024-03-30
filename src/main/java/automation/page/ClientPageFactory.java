@@ -1,5 +1,6 @@
 package automation.page;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,7 +33,8 @@ public class ClientPageFactory {
 	public void AddClient (String company) throws InterruptedException
 	{
 		clientMenu.click();
-		btnAddClient.click();
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();", btnAddClient);
 		Thread.sleep(3000);
 		radioPerson.click();
 		textBoxCompany.sendKeys(company);

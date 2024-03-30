@@ -14,6 +14,8 @@ public class CT_Common {
 	public static String URL_GURU = "https://demo.guru99.com/test/delete_customer.php";
 	public static String URL_ALERT = "https://demo.automationtesting.in/Alerts.html";
 	public static String URL_ALERT_DEMO = "https://seleniumpractise.blogspot.com/2019/01/alert-demo.html";
+	public static String URL_GURU2 = "https://demo.guru99.com/popup.php";
+	public static String URL_CODESTAR = "https://codestar.vn/";
 }
 
 
